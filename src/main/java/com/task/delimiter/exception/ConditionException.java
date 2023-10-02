@@ -1,7 +1,7 @@
-package com.task.delimiter;
+package com.task.delimiter.exception;
 
 public class ConditionException extends RuntimeException {
-    ConditionException(String message) {
+    public ConditionException(String message) {
         super(message);
     }
 }
