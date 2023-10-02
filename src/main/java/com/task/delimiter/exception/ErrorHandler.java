@@ -1,4 +1,4 @@
-package com.task.delimiter;
+package com.task.delimiter.exception;
 
 import org.springframework.http.HttpStatus;
 import org.springframework.http.converter.HttpMessageNotReadableException;

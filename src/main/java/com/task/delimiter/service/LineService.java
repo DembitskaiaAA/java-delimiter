@@ -1,4 +1,4 @@
-package com.task.delimiter;
+package com.task.delimiter.service;
 
 import org.springframework.stereotype.Service;
 

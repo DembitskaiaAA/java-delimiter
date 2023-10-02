@@ -1,5 +1,6 @@
-package com.task.delimiter;
+package com.task.delimiter.aspect;
 
+import com.task.delimiter.exception.ConditionException;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
 import org.springframework.stereotype.Component;
@@ -8,7 +9,7 @@ import org.springframework.stereotype.Component;
 @Component
 public class LineServiceAspect {
 
-    @Before("execution(* com.task.delimiter.LineServiceImp.checkCharacters(String)) && args(line)")
+    @Before("execution(* com.task.delimiter.service.LineServiceImp.checkCharacters(String)) && args(line)")
     public void beforeLineServiceCheckCharacters(String line) {
         if (line.isBlank()) {
             throw new ConditionException("The request failed. Word can't be empty");
