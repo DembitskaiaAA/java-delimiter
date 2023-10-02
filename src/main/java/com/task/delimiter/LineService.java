@@ -1,7 +1,12 @@
 package com.task.delimiter;
 
+import org.springframework.stereotype.Service;
+
 import java.util.Map;
 
+@Service
 public interface LineService {
-    Map<String, Integer> checkСharacters(String line);
+    Map<Character, Integer> checkCharacters(String line);
+
+    String removeQuotationMarks(String line);
 }
