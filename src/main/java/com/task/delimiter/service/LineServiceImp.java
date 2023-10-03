@@ -10,8 +10,8 @@ import java.util.stream.Collectors;
 @Service
 public class LineServiceImp implements LineService {
 
-    Map<String, Map<Character, Integer>> words = new HashMap<>();
-    Map<Character, Integer> characters;
+    private Map<String, Map<Character, Integer>> words = new HashMap<>();
+    private Map<Character, Integer> characters;
 
     @Override
     public Map<Character, Integer> checkCharacters(String line) {
